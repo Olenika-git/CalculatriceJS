@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(31, 27, 27);
+    font-family: MedievalSharp; 
+}
+.calculatrice{
+    position: relative;
+    display: grid;
+}
+.calculatrice .value{
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: 0;
+  padding: 10px;
+  font-size: 19px;
+  background-color: #0c2835;
+  color: white;
+  outline: 0;
+}
+.calculatrice span{
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: whitesmoke;
+  background-color: #0c2835;
+  place-items: center;
+  border: 1px solid rgb(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+.calculatrice span.calculatrice{
+  grid-column: span 2;
+  width: 100%;
+}
+.calculatrice span.egal{
+  grid-column: span 4;
+  width: 100%;
+  background-color: rgb(46, 45, 44);
+}
+.calculatrice span.plus{
+  grid-column: span 1;
+  width: 100%;
+  background-color: rgb(46, 45, 44);
+}
+.calculatrice span.bckspace{
+  grid-column: span 2;
+  width: 100%;
+  background-color: rgb(46, 45, 44);
+}
+.calculatrice span.couleurButton{
+  background-color: rgb(46, 45, 44);
+}
+.calculatrice span:active{
+  background-color: orange;
+  color: #111;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/js/index.js" defer></script>
+    <title>Calculatrice JS Gaetan Busché</title>
+</head>
+
+<body onload="refresh()"> <!--On refresh notre body directement au chargement de celui ci -->
+    <form name="calc" class="calculatrice">
+      <input type="text" name="result" class="value" readonly="" onfocus="refresh()">
+      <span class="num couleurButton" onclick="clearAll()">CE</span>
+      <span class="num couleurButton" onclick="clearDisp()">C</span>
+      <span class="bckspace" onclick="bksp()"><-</span>
+      <span class="num" onclick = "digit(7)">7</span>
+      <span class="num" onclick = "digit(8)">8</span>
+      <span class="num" onclick="digit(9)">9</span>
+      <span class="num couleurButton" onclick="operator('/')">/</span>
+      <span class="num" onclick="digit(4)">4</span>
+      <span class="num" onclick="digit(5)">5</span>
+      <span class="num" onclick="digit(6)">6</span>
+      <span class="num couleurButton" onclick="operator('*')">*</span>
+      <span class="num" onclick="digit(1)">1</span>
+      <span class="num" onclick="digit(2)">2</span>
+      <span class="num" onclick="digit(3)">3</span>
+      <span class="num couleurButton" onclick="operator('-')">-</span>
+      <span class="num" onclick="sign()">+/-</span>
+      <span class="num" onclick="digit(0)">0</span>
+      <span class="num " onclick="period()"">.</span>
+      <span class="num plus" onclick="operator('+')">+</span>
+      <span class="num egal" onclick="equals()">=</span>
+    </form>
+</body>
+</html>
